@@ -1,0 +1,90 @@
+/* Overall container styling */
+.container {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 0 1em;
+  }
+  
+  /* Tabs container */
+  .tab-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  
+  /* Individual tab styling */
+  .tab {
+    cursor: pointer;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+    font-size: 16px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    flex: 1;
+    text-align: center;
+    margin: 0 4px;
+  }
+  
+  /* Active tab styling */
+  .tab.active {
+    background: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    transform: scale(1.05);
+  }
+  
+  /* Form styling */
+  .form-container {
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  
+  /* Input styling */
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Password visibility toggle icon */
+  .password-field {
+    position: relative;
+  }
+  
+  .fa-eye {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Button background color */
+  .btn-primary {
+    background: #007bff;
+  }
+  
+  /* Button hover effect */
+  .btn:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+  }
+  

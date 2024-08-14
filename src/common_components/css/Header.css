@@ -1,0 +1,144 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #b92b27;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #a82723;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+.header nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li {
+  margin-right: 20px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #636466;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.header nav ul li a:hover {
+  color: #b92b27;
+  background-color: rgba(185, 43, 39, 0.1);
+}
+
+.search-bar {
+  position: relative;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  width: 250px;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #b92b27;
+  width: 300px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #636466;
+}
+
+.user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-menu img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e2e2e2;
+  transition: border-color 0.3s ease;
+}
+
+.user-menu:hover img {
+  border-color: #b92b27;
+}
+
+.user-name {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #636466;
+  transition: text-decoration 0.3s ease;
+}
+
+.user-menu:hover .user-name {
+  text-decoration: underline;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 5px 10px;
+  z-index: 1001;
+  display: block; /* Ensured to show when state is true */
+}
+
+.logout-link {
+  color: #636466;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-link:hover {
+  background-color: rgba(185, 43, 39, 0.1);
+  color: #b92b27;
+  border-radius: 3px;
+}

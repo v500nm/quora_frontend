@@ -1,0 +1,148 @@
+{
+    "receiptList": [
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        }, {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        },
+        {
+            "refNo": 12345,
+            "exb": "regent machine",
+            "recpNo" : 1,
+            "recpDt" : "11-04-23",
+            "baseAmt" : 987,
+            "cgst" : 9,
+            "sgst":9,
+            "igst":18,
+            "amt":180,
+            "recpBank":"BOI"
+        }
+
+    ]
+}

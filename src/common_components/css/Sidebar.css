@@ -1,0 +1,56 @@
+.sidebar {
+    width: 220px; /* Adjust width */
+    min-width: 220px; /* Prevent shrinking */
+    padding: 25px 20px; /* Increased padding for more spacing */
+    background-color: #f7f7f7;
+    height: calc(100vh - 50px); /* Adjust to match header height */
+    position: sticky;
+    top: 50px; /* Should match the header height */
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    font-family: Arial, sans-serif; /* Use a clean font */
+}
+
+.sidebar nav ul,
+.sidebar .topics ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li,
+.sidebar .topics ul li {
+    margin-bottom: 15px; /* Space out list items */
+}
+
+.sidebar nav ul li a,
+.sidebar .topics ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Darker text color */
+    font-size: 16px; /* Slightly larger font */
+    display: block;
+    padding: 8px 12px; /* Add padding inside links */
+    border-radius: 4px; /* Slightly round the corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.sidebar nav ul li a:hover,
+.sidebar .topics ul li a:hover {
+    background-color: #e2e2e2; /* Light gray hover effect */
+}
+
+.sidebar .topics h3 {
+    margin-top: 30px; /* Add space above topics header */
+    font-size: 18px;
+    color: #555; /* Slightly lighter color for the heading */
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 15px 10px; /* Adjust padding for mobile */
+    }
+}
