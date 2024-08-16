@@ -16,7 +16,6 @@ function App() {
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/" element={<Login />} />
             <Route exact path="/home" element={<Home />} />
-          
           </Routes>
         </Switch>
       </div>

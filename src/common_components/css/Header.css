@@ -142,3 +142,21 @@
   color: #b92b27;
   border-radius: 3px;
 }
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #007bff; /* Or any color of your choice */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Text color */
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px; /* Center text vertically */
+}
+
+.user-name {
+  margin-left: 8px; /* Space between the avatar and the name */
+}

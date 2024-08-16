@@ -53,10 +53,13 @@ export function defaultEmailValidator(value) {
 }
 
 export function loginPasswordValidator(value) {
+    
+    const re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,12}$/;
     if (value == '') {
         return 'Password can not be blank.';
-    }
-    else {
+    } else if (!re.test(value)) {
+        return 'Minimum 8 characters with one capital letter and one digit and one special characters. Maximum length 12 characters.';
+    }else {
         return '';
     }
 

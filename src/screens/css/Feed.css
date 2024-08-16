@@ -178,3 +178,61 @@
 .modal-actions button.cancel:hover {
   background-color: #5a6268;
 }
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #007bff; /* Or any color of your choice */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Text color */
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px; /* Center text vertically */
+}
+
+.user-name {
+  margin-left: 8px; /* Space between the avatar and the name */
+}
+.feed-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.user-name {
+  margin-left: 10px; /* Space between the avatar and the name */
+  font-weight: bold;
+}
+
+.post-date {
+  font-size: 0.9em;
+  color: #777;
+  margin-left: auto; /* Pushes the date to the far right */
+  text-align: right;
+}
