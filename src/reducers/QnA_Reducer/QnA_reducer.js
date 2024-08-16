@@ -3,9 +3,7 @@ import {
   ADD_QUESTION_ACTION_TYPE,
   DELETE_ANSWER_ACTION_TYPE,
   DELETE_QUESTION_ACTION_TYPE,
-  VIEW_ALL_QUESTIONS_ACTION_TYPE,
-  VIEW_ALL_QUESTIONS_WITH_ANSWERS_ACTION_TYPE,
-  VIEW_ANSWERS_WITH_QUESTIONS_ACTION_TYPE,
+  VIEW_QUESTIONS_WITH_ANSWERS_AND_COMMENTS_ACTION_TYPE,
 } from "../../utils/constants";
 
 const initialState = {
@@ -16,9 +14,7 @@ function QnAReducer(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
-    case VIEW_ALL_QUESTIONS_ACTION_TYPE:
-    case VIEW_ALL_QUESTIONS_WITH_ANSWERS_ACTION_TYPE:
-    case VIEW_ANSWERS_WITH_QUESTIONS_ACTION_TYPE:
+    case VIEW_QUESTIONS_WITH_ANSWERS_AND_COMMENTS_ACTION_TYPE:
       return {
         ...state,
         feedItems: payload,

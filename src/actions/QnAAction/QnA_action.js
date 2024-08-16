@@ -9,14 +9,8 @@ import {
   deleteAnswerUrl,
   deleteQuestionUrl,
   headers,
-  VIEW_ALL_QUESTIONS_ACTION_TYPE,
-  VIEW_ALL_QUESTIONS_WITH_ANSWERS_ACTION_TYPE,
-  VIEW_ANSWERS_WITH_QUESTIONS_ACTION_TYPE,
-  VIEW_COMMENT_FOR_ANSWERS_ACTION_TYPE,
-  viewAllQuestionsUrl,
-  viewAllQuestionsWithAnswersUrl,
-  viewAnswersWithQuestionsUrl,
-  viewCommentforAnswersUrl,
+  VIEW_QUESTIONS_WITH_ANSWERS_AND_COMMENTS_ACTION_TYPE,
+  viewQuestionsWithAnswersAndCommentsUrl,
 } from "../../utils/constants";
 
 export const add_question_action =
@@ -61,7 +55,7 @@ export const add_question_action =
     }
   };
 
-export const view_all_questions_action = (Title) => async (dispatch) => {
+export const viewQuestionsWithAnswersAndComments_action = (Title) => async (dispatch) => {
   console.log(Title,"Search")
   try {
     const mapdata = {
@@ -69,9 +63,9 @@ export const view_all_questions_action = (Title) => async (dispatch) => {
       Title:Title!=""?Title:null
     };
     console.log("data----------", mapdata);
-    const res = await axiosGet(viewAllQuestionsUrl, mapdata, headers);
+    const res = await axiosGet(viewQuestionsWithAnswersAndCommentsUrl, mapdata, headers);
     dispatch({
-      type: VIEW_ALL_QUESTIONS_ACTION_TYPE,
+      type: VIEW_QUESTIONS_WITH_ANSWERS_AND_COMMENTS_ACTION_TYPE,
       payload: res,
     });
 
@@ -80,43 +74,6 @@ export const view_all_questions_action = (Title) => async (dispatch) => {
     return Promise.reject(err);
   }
 };
-
-export const view_all_questions_with_answers_action = () => async (dispatch) => {
-    try {
-      const mapdata = {
-        UserID: sessionStorage.getItem("UserID")
-      };
-      console.log("data----------", mapdata);
-      const res = await axiosGet(viewAllQuestionsWithAnswersUrl, mapdata, headers);
-      dispatch({
-        type: VIEW_ALL_QUESTIONS_WITH_ANSWERS_ACTION_TYPE,
-        payload: res,
-      });
-  
-      return Promise.resolve(res);
-    } catch (err) {
-      return Promise.reject(err);
-    }
-  };
-
-  export const view_answers_with_questions_action = (QuestionID) => async (dispatch) => {
-    try {
-      const mapdata = {
-        UserID: sessionStorage.getItem("UserID"),
-        QuestionID: QuestionID!=""?QuestionID:null,
-      };
-      console.log("data----------", mapdata);
-      const res = await axiosGet(viewAnswersWithQuestionsUrl, mapdata, headers);
-      dispatch({
-        type: VIEW_ANSWERS_WITH_QUESTIONS_ACTION_TYPE,
-        payload: res,
-      });
-  
-      return Promise.resolve(res);
-    } catch (err) {
-      return Promise.reject(err);
-    }
-  };
 
 export const delete_question_action = ( QuestionID) => async (dispatch) => {
     try {

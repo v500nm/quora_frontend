@@ -31,16 +31,13 @@ export const loginUrl = `${BASE_URL}/auth/loginUser`;
 export const registerUrl = `${BASE_URL}/auth/registerUser`;
 
 //QnA
-export const viewAllQuestionsUrl = `${BASE_URL}/QnA/viewAllQuestions`;
-export const viewAllQuestionsWithAnswersUrl = `${BASE_URL}/QnA/viewAllQuestionsWithAnswers`;
-export const viewAnswersWithQuestionsUrl = `${BASE_URL}/QnA/viewAnswersWithQuestions`;
+export const viewQuestionsWithAnswersAndCommentsUrl = `${BASE_URL}/QnA/viewQuestionsWithAnswersAndComments`;
 export const deleteQuestionUrl = `${BASE_URL}/QnA/deleteQuestion`;
 export const deleteAnswerUrl = `${BASE_URL}/QnA/deleteAnswer`;
 export const addQuestionUrl = `${BASE_URL}/QnA/addQuestion`;
 export const addAnswerUrl = `${BASE_URL}/QnA/addAnswer`;
 
 //CommentVote
-export const viewCommentforAnswersUrl = `${BASE_URL}/CommentVote/viewCommentforAnswers`;
 export const deleteCommentUrl = `${BASE_URL}/CommentVote/deleteComment`;
 export const addCommentUrl = `${BASE_URL}/CommentVote/addComment`;
 export const addVoteUrl = `${BASE_URL}/CommentVote/addVote`;
@@ -66,16 +63,13 @@ export const LOGIN_ACTION_TYPE = "LOGIN";
 export const REGISTER_ACTION_TYPE = "REGISTER";
 
 //QnA
-export const VIEW_ALL_QUESTIONS_ACTION_TYPE = "VIEW_ALL_QUESTIONS";
-export const VIEW_ALL_QUESTIONS_WITH_ANSWERS_ACTION_TYPE = "VIEW_ALL_QUESTIONS_WITH_ANSWERS";
-export const VIEW_ANSWERS_WITH_QUESTIONS_ACTION_TYPE = "VIEW_ANSWERS_WITH_QUESTIONS";
+export const VIEW_QUESTIONS_WITH_ANSWERS_AND_COMMENTS_ACTION_TYPE = "VIEW_QUESTIONS_WITH_ANSWERS_AND_COMMENTS";
 export const DELETE_QUESTION_ACTION_TYPE = "DELETE_QUESTION";
 export const DELETE_ANSWER_ACTION_TYPE = "DELETE_ANSWER";
 export const ADD_QUESTION_ACTION_TYPE = "ADD_QUESTION";
 export const ADD_ANSWER_ACTION_TYPE = "ADD_ANSWER";
 
 //CommentVote
-export const VIEW_COMMENT_FOR_ANSWERS_ACTION_TYPE = "VIEW_COMMENT_FOR_ANSWERS";
 export const DELETE_COMMENT_ACTION_TYPE = "DELETE_COMMENT";
 export const ADD_COMMENT_ACTION_TYPE = "ADD_COMMENT";
 export const ADD_VOTE_ACTION_TYPE = "ADD_VOTE";

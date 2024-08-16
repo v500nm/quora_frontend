@@ -1,28 +1,30 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import './css/Sidebar.css';
+import { connect } from 'react-redux';
 
 function Sidebar() {
   return (
     <aside className="sidebar">
       <nav>
         <ul>
-          <li><a href="/feed">Feed</a></li>
-          <li><a href="/bookmarks">Bookmarks</a></li>
-          <li><a href="/following">Following</a></li>
-          <li><a href="/your-content">Your content</a></li>
+          <li><Link to="/feed">Feed</Link></li>
+          <li><Link to="/bookmarks">Bookmarks</Link></li>
+          <li><Link to="/following">Following</Link></li>
+          <li><Link to="/your-content">Your content</Link></li>
         </ul>
       </nav>
       <div className="topics">
         <h3>Topics</h3>
         <ul>
-          <li><a href="/topic/technology">Technology</a></li>
-          <li><a href="/topic/science">Science</a></li>
-          <li><a href="/topic/health">Health</a></li>
-          <li><a href="/topic/business">Business</a></li>
+          <li><Link to="/topic/technology">Technology</Link></li>
+          <li><Link to="/topic/science">Science</Link></li>
+          <li><Link to="/topic/health">Health</Link></li>
+          <li><Link to="/topic/business">Business</Link></li>
         </ul>
       </div>
     </aside>
   );
 }
 
-export default Sidebar;
+export default connect(null, {  })(Sidebar);
